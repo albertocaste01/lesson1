@@ -2,16 +2,36 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>EXternal links</title>
+  <title>box model</title>
+  <style>
+  	body{
+  		background-color: gray;
+  		font-size: 120%;
+  		margin: 0;
+  	}
+
+  	#box{
+  		background-color: blue;
+  		padding: 10px;
+  		border: 5px solid black;
+  		margin: 20px;
+  		width: 300px;
+  		box-sizing: border-box;
+
+  	}
+
+  	#inbox{
+  		background-color: green;
+  	}
+
+  </style>
 </head>
 <body>
-	<h1>External links</h1>
-	<section>
-		This the link to my facebook:
-		<a href="https://www.facebook.com/alberto.castelli.58152" target="_blank" title="add me as friend">
-			<div>This is my facebook, add me as friend!</div>
-		</a>
-	</section>
+	<h1>box model</h1>
+	<div id="box">
+		<div id="inbox">Errare humanum est, perseverare autem diabolicum</div>
+	</div>
+	
 </body>
 
 </html>
